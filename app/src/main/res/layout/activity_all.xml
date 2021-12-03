@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:text="운동 추천"
+        android:textStyle="bold"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

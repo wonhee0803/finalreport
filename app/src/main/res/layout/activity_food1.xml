@@ -23,6 +23,7 @@
         android:layout_marginTop="72dp"
         android:text="식단 관리"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,82 +39,28 @@
         android:text="뒤로"
         android:textColor="#000000"
         app:layout_constraintEnd_toStartOf="@+id/text_title"
-        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="#닭가슴살 #연어 #채소"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/button1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="114dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="12dp"
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="82dp"
+        android:layout_height="35dp"
         android:layout_marginTop="56dp"
-        android:text="저탄고지 다이어트"
-        app:layout_constraintEnd_toStartOf="@+id/button1"
-        app:layout_constraintHorizontal_bias="0.102"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#FCC7E1"
+        android:outlineProvider="background"
+        android:text="알아보기"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_title" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="83dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="24dp"
-        android:backgroundTint="#FCC7E1"
-        android:outlineProvider="background"
-        android:text="알아보기"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="83dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="24dp"
-        android:backgroundTint="#FCC7E1"
-        android:outlineProvider="background"
-        android:text="알아보기"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="83dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="24dp"
-        android:backgroundTint="#FCC7E1"
-        android:outlineProvider="background"
-        android:text="알아보기"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-    <Button
         android:id="@+id/button2"
-        android:layout_width="83dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="82dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="78dp"
         android:layout_marginEnd="24dp"
         android:backgroundTint="#FCC7E1"
         android:outlineProvider="background"
@@ -124,10 +71,10 @@
         app:layout_constraintTop_toBottomOf="@+id/button1" />
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="83dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="56dp"
+        android:id="@+id/button3"
+        android:layout_width="82dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="78dp"
         android:layout_marginEnd="24dp"
         android:backgroundTint="#FCC7E1"
         android:outlineProvider="background"
@@ -135,77 +82,134 @@
         android:textColor="#000000"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title" />
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="82dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#FCC7E1"
+        android:outlineProvider="background"
+        android:text="알아보기"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="82dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#FCC7E1"
+        android:outlineProvider="background"
+        android:text="알아보기"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="97dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/food2" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="97dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:srcCompat="@drawable/food4" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="97dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:srcCompat="@drawable/food5" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="97dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/food3" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="97dp"
-        android:layout_height="79dp"
+        android:id="@+id/image_food1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="36dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_title"
         app:srcCompat="@drawable/food1" />
 
+    <ImageView
+        android:id="@+id/image_food2"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_food1"
+        app:srcCompat="@drawable/food2" />
+
+    <ImageView
+        android:id="@+id/image_food3"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_food2"
+        app:srcCompat="@drawable/food3" />
+
+    <ImageView
+        android:id="@+id/image_food4"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_food3"
+        app:srcCompat="@drawable/food4" />
+
+    <ImageView
+        android:id="@+id/image_food5"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_food4"
+        app:srcCompat="@drawable/food5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="114dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="56dp"
+        android:text="저탄고지 다이어트"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/image_food1"
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="#닭가슴살 #연어 #채소"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/button1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/image_food1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="68dp"
+        android:textColor="@color/purple_700"
         android:text="연예인 식단표"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image_food2"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:text="#아이유 #수지 #박보람"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/image_food2"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
@@ -213,9 +217,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="68dp"
         android:text="원푸드 다이어트"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image_food3"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
@@ -223,10 +229,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="#바나나 #사과 #고구마"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/image_food3"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
@@ -234,41 +240,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="68dp"
         android:text="황제 다이어트"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image_food4"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
         android:text="#소고기 #돼지고기 #닭고기"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/image_food4"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="68dp"
         android:text="디톡스 다이어트"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/image_food5"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:text="#레몬디톡스 #독소제거"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/image_food5"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
 

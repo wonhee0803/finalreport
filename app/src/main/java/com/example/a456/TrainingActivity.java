@@ -22,7 +22,7 @@ public class TrainingActivity extends AppCompatActivity {
     }
 
     private void startFood1Activity() {
-        Intent intent = new Intent(this, Food1Activity.class);
+        Intent intent = new Intent(this, FoodActivity.class);
 
         startActivity(intent);
     }
