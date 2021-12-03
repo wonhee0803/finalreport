@@ -7,16 +7,6 @@
 
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="456번 다이어터"
-        android:background="#99CCFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/text_copyright"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -30,12 +20,12 @@
         android:id="@+id/text_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="60dp"
         android:text="456번 다이어터"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/image_food"
@@ -81,13 +71,16 @@
 
     <Button
         android:id="@+id/button_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:text="back"
-        android:backgroundTint="#9999CC"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="68dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:outlineProvider="background"
+        android:text="뒤로"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/text_title"
+        app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_sport" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
