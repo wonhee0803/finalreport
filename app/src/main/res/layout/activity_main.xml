@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:text="내 BMI 지수 확인하기"
+        android:textColor="#330099"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -153,4 +154,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_question"
         tools:srcCompat="@drawable/face2" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,9 +19,9 @@ public class DownActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.buttonBack3.setOnClickListener(v -> finish());
-        binding.button6.setOnClickListener(v-> startWeb1());
-        binding.button10.setOnClickListener(v-> startWeb2());
-        binding.button12.setOnClickListener(v-> startWeb3());
+        binding.buttonDown1.setOnClickListener(v-> startWeb1());
+        binding.buttonDown2.setOnClickListener(v-> startWeb2());
+        binding.buttonDown3.setOnClickListener(v-> startWeb3());
     }
 
     public void startWeb1() {

@@ -19,9 +19,9 @@ public class AllActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.buttonBack.setOnClickListener(v -> finish());
-        binding.button11.setOnClickListener(v-> startWeb1());
-        binding.button2.setOnClickListener(v-> startWeb2());
-        binding.button3.setOnClickListener(v-> startWeb3());
+        binding.buttonAll1.setOnClickListener(v-> startWeb1());
+        binding.buttonAll2.setOnClickListener(v-> startWeb2());
+        binding.buttonAll3.setOnClickListener(v-> startWeb3());
     }
 
     public void startWeb1() {

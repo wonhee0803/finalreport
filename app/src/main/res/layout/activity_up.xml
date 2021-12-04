@@ -2,42 +2,56 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#D2E1FF"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RatingBar
-        android:id="@+id/ratingBar_up3"
+    <TextView
+        android:id="@+id/text_title_up1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_up3"
-        app:layout_constraintHorizontal_bias="0.382"
+        android:layout_marginTop="64dp"
+        android:text="5분 가장 확실한 팔뚝살 제거법"
+        android:textColor="#0000CD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_up3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
 
     <TextView
-        android:id="@+id/text_up3"
+        android:id="@+id/text_up1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="#20분 #상체폭파 #홈트"
+        android:text="#5분 #팔뚝살 #다이어트"
         android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_up3"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintEnd_toStartOf="@+id/button_up1"
+        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title_up3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_title_up1" />
 
     <RatingBar
-        android:id="@+id/ratingBar5"
+        android:id="@+id/ratingBar_up1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_up2"
+        app:layout_constraintEnd_toStartOf="@+id/button_up1"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_up2" />
+        app:layout_constraintTop_toBottomOf="@+id/text_up1" />
+
+    <Button
+        android:id="@+id/button_up1"
+        android:layout_width="68dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#6EE0FF"
+        android:text="시작"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_up1" />
 
     <TextView
         android:id="@+id/text_title_up2"
@@ -76,6 +90,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_title_up2" />
 
+    <RatingBar
+        android:id="@+id/ratingBar_up2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_up2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_up2" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_up3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_up3"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_up3" />
+
+    <TextView
+        android:id="@+id/text_up3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="#20분 #상체폭파 #홈트"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_up3"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_up3" />
+
+
     <TextView
         android:id="@+id/text_title_up3"
         android:layout_width="wrap_content"
@@ -88,7 +137,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar5" />
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar_up2" />
 
     <Button
         android:id="@+id/button_up3"
@@ -139,51 +188,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_up1"
-        android:layout_width="68dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="40dp"
-        android:backgroundTint="#6EE0FF"
-        android:text="시작"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title_up1" />
 
-    <TextView
-        android:id="@+id/text_title_up1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="5분 가장 확실한 팔뚝살 제거법"
-        android:textColor="#0000CD"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title" />
-
-    <TextView
-        android:id="@+id/text_up1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="#5분 #팔뚝살 #다이어트"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_up1"
-        app:layout_constraintHorizontal_bias="0.189"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title_up1" />
-
-    <RatingBar
-        android:id="@+id/ratingBar_up1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_up1"
-        app:layout_constraintHorizontal_bias="0.539"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_up1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

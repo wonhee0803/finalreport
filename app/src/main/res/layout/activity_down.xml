@@ -2,96 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#D2E1FF"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RatingBar
-        android:id="@+id/ratingBar13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_12"
-        app:layout_constraintHorizontal_bias="0.41"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_12" />
-
-    <Button
-        android:id="@+id/button_12"
-        android:layout_width="68dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="40dp"
-        android:backgroundTint="#6EE0FF"
-        android:text="시작"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title15" />
 
     <TextView
-        android:id="@+id/text_12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:text="#30분 #스쿼트 #챌린지"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_12"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title15" />
-
-    <TextView
-        android:id="@+id/text_title15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="하루30분 하비탈출 챌린지"
-        android:textColor="#0000CD"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar12" />
-
-    <Button
-        android:id="@+id/button_10"
-        android:layout_width="68dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="40dp"
-        android:backgroundTint="#6EE0FF"
-        android:text="시작"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title14" />
-
-    <RatingBar
-        android:id="@+id/ratingBar8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_6"
-        app:layout_constraintHorizontal_bias="0.371"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_7" />
-
-    <TextView
-        android:id="@+id/text_title14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="하체 집중 20분 올인원 운동"
-        android:textColor="#0000CD"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar8" />
-
-    <TextView
-        android:id="@+id/text_title10"
+        android:id="@+id/text_title_down1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -102,36 +19,92 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title9" />
+        app:layout_constraintTop_toBottomOf="@+id/text_title_down" />
 
     <TextView
-        android:id="@+id/text_11"
+        android:id="@+id/text_title_down2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
-        android:text="#20분 #NO층간소음 #NO반복"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_10"
-        app:layout_constraintHorizontal_bias="0.009"
+        android:layout_marginTop="52dp"
+        android:text="하체 집중 20분 올인원 운동"
+        android:textColor="#0000CD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title14" />
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar_down1" />
 
     <TextView
-        android:id="@+id/text_7"
+        android:id="@+id/text_title_down3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="하루30분 하비탈출 챌린지"
+        android:textColor="#0000CD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar_down2" />
+
+    <TextView
+        android:id="@+id/text_down1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="8dp"
         android:text="#10분 #NO층간소음 #NO반복"
         android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_6"
+        app:layout_constraintEnd_toStartOf="@+id/button_down1"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title10" />
+        app:layout_constraintTop_toBottomOf="@+id/text_title_down1" />
+
+    <TextView
+        android:id="@+id/text_down2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:text="#20분 #NO층간소음 #NO반복"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_down2"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_down2" />
+
+    <TextView
+        android:id="@+id/text_down3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="#30분 #스쿼트 #챌린지"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_down3"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_down3" />
+
+
+    <TextView
+        android:id="@+id/text_title_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="하체 운동 추천"
+        android:textColor="#006400"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_6"
+        android:id="@+id/button_down1"
         android:layout_width="68dp"
         android:layout_height="69dp"
         android:layout_marginTop="16dp"
@@ -139,18 +112,29 @@
         android:backgroundTint="#6EE0FF"
         android:text="시작"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title10" />
+        app:layout_constraintTop_toBottomOf="@+id/text_title_down1" />
 
-    <RatingBar
-        android:id="@+id/ratingBar12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/button_10"
-        app:layout_constraintHorizontal_bias="0.173"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_11" />
+    <Button
+        android:id="@+id/button_down2"
+        android:layout_width="68dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#6EE0FF"
+        android:text="시작"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_down2" />
+
+    <Button
+        android:id="@+id/button_down3"
+        android:layout_width="68dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#6EE0FF"
+        android:text="시작"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title_down3" />
 
     <Button
         android:id="@+id/button_back3"
@@ -166,19 +150,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/text_title9"
+
+    <RatingBar
+        android:id="@+id/ratingBar_down1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="하체 운동 추천"
-        android:textColor="#006400"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_down1"
+        app:layout_constraintHorizontal_bias="0.371"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/text_down1" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_down2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_down2"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_down2" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_down3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_down3"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_down3" />
 
     <TextView
         android:id="@+id/text_copyright"
