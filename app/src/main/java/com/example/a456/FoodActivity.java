@@ -6,16 +6,16 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.a456.databinding.ActivityFood1Binding;
+import com.example.a456.databinding.ActivityFoodBinding;
 
 
 public class FoodActivity extends AppCompatActivity {
-    private ActivityFood1Binding binding;
+    private ActivityFoodBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityFood1Binding.inflate(getLayoutInflater());
+        binding = ActivityFoodBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         binding.buttonBack.setOnClickListener(v -> finish());
