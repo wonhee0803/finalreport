@@ -104,14 +104,16 @@
         android:layout_width="82dp"
         android:layout_height="35dp"
         android:layout_marginTop="78dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#FCC7E1"
         android:outlineProvider="background"
         android:text="알아보기"
         android:textColor="#000000"
         android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.017" />
 
     <ImageView
         android:id="@+id/image_food1"
@@ -159,8 +161,10 @@
         android:layout_height="80dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_food4"
+        app:layout_constraintVertical_bias="0.114"
         app:srcCompat="@drawable/food5" />
 
     <TextView
@@ -275,12 +279,14 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="10dp"
         android:text="#레몬디톡스 #독소제거"
         android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintStart_toEndOf="@+id/image_food5"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.111" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -116,7 +116,7 @@
         android:layout_width="254dp"
         android:layout_height="106dp"
         android:layout_marginTop="20dp"
-        android:text="당신은 과제충 위험군 입니다. 다이어트를 위한 당신의 하루 권장 칼로리는 8000kcal 입니다."
+        android:text="당신은 과제충 위험군 입니다. 다이어트를 시작하셔야 됩니다."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -140,7 +140,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/button_yes"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_question"
         tools:srcCompat="@drawable/face1" />
@@ -150,11 +150,35 @@
         android:layout_width="79dp"
         android:layout_height="80dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="92dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_question"
         tools:srcCompat="@drawable/face2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="아니오"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_no"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="예"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/button_yes"
+        app:layout_constraintVertical_bias="0.032" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

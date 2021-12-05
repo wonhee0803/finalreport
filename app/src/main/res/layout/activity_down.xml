@@ -75,19 +75,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_title_down2" />
 
+
     <TextView
         android:id="@+id/text_down3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
         android:text="#30분 #스쿼트 #챌린지"
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/button_down3"
-        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_title_down3" />
-
 
     <TextView
         android:id="@+id/text_title_down"
@@ -133,8 +133,10 @@
         android:layout_marginEnd="40dp"
         android:backgroundTint="#6EE0FF"
         android:text="시작"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title_down3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_title_down3"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button_back3"
@@ -179,10 +181,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintEnd_toStartOf="@+id/button_down3"
-        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_down3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_down3"
+        app:layout_constraintVertical_bias="0.025" />
 
     <TextView
         android:id="@+id/text_copyright"

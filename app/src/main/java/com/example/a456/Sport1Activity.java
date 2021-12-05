@@ -26,19 +26,19 @@ public class Sport1Activity extends AppCompatActivity {
     }
 
     private void startUpActivity() {
-        Intent intent = new Intent(this, ActivityUpBinding.class);
+        Intent intent = new Intent(this, UpActivity.class);
 
         startActivity(intent);
     }
 
     private void startBackActivity() {
-        Intent intent = new Intent(this, ActivityDownBinding.class);
+        Intent intent = new Intent(this, DownActivity.class);
 
         startActivity(intent);
     }
 
     private void startAllActivity() {
-        Intent intent = new Intent(this, ActivityAllBinding.class);
+        Intent intent = new Intent(this, AllActivity.class);
 
         startActivity(intent);
     }

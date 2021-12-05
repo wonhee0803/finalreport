@@ -106,10 +106,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintEnd_toStartOf="@+id/button_up3"
         app:layout_constraintHorizontal_bias="0.382"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_up3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_up3"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/text_up3"
@@ -144,11 +146,13 @@
         android:layout_width="68dp"
         android:layout_height="69dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="44dp"
         android:backgroundTint="#6EE0FF"
         android:text="시작"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title_up3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_title_up3"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/text_copyright"

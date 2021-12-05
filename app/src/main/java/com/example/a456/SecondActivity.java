@@ -24,7 +24,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void startDiaryActivity() {
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, DiaryActivity.class);
 
         startActivity(intent);
     }

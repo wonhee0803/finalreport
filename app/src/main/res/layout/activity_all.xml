@@ -125,11 +125,13 @@
         android:layout_width="68dp"
         android:layout_height="69dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="40dp"
-        android:text="시작"
+        android:layout_marginEnd="44dp"
         android:backgroundTint="#6EE0FF"
+        android:text="시작"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title_all3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_title_all3"
+        app:layout_constraintVertical_bias="0.043" />
 
     <Button
         android:id="@+id/button_back"
@@ -171,10 +173,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintEnd_toStartOf="@+id/button_all3"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_all3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_all3"
+        app:layout_constraintVertical_bias="0.126" />
 
     <TextView
         android:id="@+id/text_copyright"
