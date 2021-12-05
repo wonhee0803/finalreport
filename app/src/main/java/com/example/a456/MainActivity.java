@@ -49,8 +49,13 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "몸무게를 입력해주세요", Toast.LENGTH_SHORT).show();
             return;
         }
-    }
-    DecimalFormat formatter = new DecimalFormat("#.##");
 
+        float left = Float.parseFloat(leftValue);
+        float right = Float.parseFloat(rightValue);
+
+        float result = 0;
+        result = left / right;
+
+    }
 
 }

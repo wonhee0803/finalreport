@@ -23,7 +23,6 @@ public class FoodActivity extends AppCompatActivity {
         binding.button2.setOnClickListener(v-> startWeb2());
         binding.button3.setOnClickListener(v-> startWeb3());
         binding.button4.setOnClickListener(v-> startWeb4());
-        binding.button5.setOnClickListener(v-> startWeb5());
     }
 
     public void startWeb1() {
@@ -49,13 +48,6 @@ public class FoodActivity extends AppCompatActivity {
 
     public void startWeb4() {
         String url = "https://terms.naver.com/entry.naver?docId=74335&cid=43667&categoryId=43667";
-        Uri uri = Uri.parse(url);
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
-    }
-
-    public void startWeb5() {
-        String url = "https://terms.naver.com/entry.naver?docId=2843277&cid=63166&categoryId=55605#TABLE_OF_CONTENT4";
         Uri uri = Uri.parse(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
