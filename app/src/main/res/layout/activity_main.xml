@@ -114,8 +114,8 @@
 
     <TextView
         android:id="@+id/text_bmi"
-        android:layout_width="254dp"
-        android:layout_height="106dp"
+        android:layout_width="253dp"
+        android:layout_height="64dp"
         android:layout_marginTop="20dp"
         android:text="당신은 과제충 위험군 입니다. 다이어트를 시작하셔야 됩니다."
         app:layout_constraintEnd_toEndOf="parent"
