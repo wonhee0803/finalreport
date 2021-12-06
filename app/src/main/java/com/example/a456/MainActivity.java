@@ -1,5 +1,6 @@
 package com.example.a456;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -25,8 +26,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.button.setOnClickListener(v -> calculate());
+        binding.button.setOnClickListener(v -> bmi());
         binding.buttonYes.setOnClickListener(v -> startSecondActivity());
-        binding.buttonNo.setOnClickListener(v -> finish());
+        binding.buttonNo.setOnClickListener(v -> showDialog());
 
     }
 
@@ -55,7 +57,35 @@ public class MainActivity extends AppCompatActivity {
 
         float result = 0;
         result = left / right;
-
     }
+
+    public void bmi() {
+        float bmiValue = 20.4f;
+
+        String message = "";
+        if (bmiValue < 10) {
+            message = "저체중";
+        } else if (bmiValue < 20) {
+            message = "딱좋아";
+        } else {
+            message = "다이어트가 시급합니다";
+        }
+        binding.textBmi.setText(message);
+    }
+
+    public void showDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("앱을 종료하시겠습니까?")
+                .setPositiveButton("Yes", (dialog, id) -> {
+                    finish();
+                })
+                .setNegativeButton("No", (dialog, id) -> {
+                    // do nothing
+                });
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+
 
 }
