@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         float weight = Float.parseFloat(leftValue);
         float height = Float.parseFloat(rightValue);
-        float bmiValue = height / (weight / 100);
+        float bmiValue = height / ((weight / 100) * (weight / 100));
 
         String message = "";
         if (bmiValue <= 18.5) {
