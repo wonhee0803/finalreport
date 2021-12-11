@@ -2,19 +2,13 @@ package com.example.a456;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.media.VolumeShaper;
-import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.a456.databinding.ActivityMainBinding;
 
-import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
