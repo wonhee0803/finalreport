@@ -32,16 +32,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void bmi() {
-        String leftValue = binding.editHeight.getText().toString();
-        String rightValue = binding.editWeight.getText().toString();
+        String leftValue = binding.editWeight.getText().toString();
+        String rightValue = binding.editHeight.getText().toString();
 
         if (leftValue.isEmpty()) {
-            Toast.makeText(this, "키를 입력해주세요", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "몸무게를 입력해주세요", Toast.LENGTH_SHORT).show();
             return;
         }
 
         if (rightValue.isEmpty()) {
-            Toast.makeText(this, "몸무게를 입력해주세요", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "키를 입력해주세요", Toast.LENGTH_SHORT).show();
             return;
         }
 
