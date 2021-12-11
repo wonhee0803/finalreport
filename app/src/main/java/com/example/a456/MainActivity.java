@@ -32,22 +32,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void bmi() {
-        String leftValue = binding.editWeight.getText().toString();
-        String rightValue = binding.editHeight.getText().toString();
+        String firstValue = binding.editHeight.getText().toString();
+        String secondValue = binding.editWeight.getText().toString();
 
-        if (leftValue.isEmpty()) {
-            Toast.makeText(this, "몸무게를 입력해주세요", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-        if (rightValue.isEmpty()) {
+        if (firstValue.isEmpty()) {
             Toast.makeText(this, "키를 입력해주세요", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        float weight = Float.parseFloat(leftValue);
-        float height = Float.parseFloat(rightValue);
-        float bmiValue = height / ((weight / 100) * (weight / 100));
+        if (secondValue.isEmpty()) {
+            Toast.makeText(this, "몸무게를 입력해주세요", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        float height = Float.parseFloat(firstValue);
+        float weight = Float.parseFloat(secondValue);
+        float bmiValue = weight / ((height / 100) * (height / 100));
 
         String message = "";
         if (bmiValue <= 18.5) {
