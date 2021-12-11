@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.button.setOnClickListener(v -> calculate());
         binding.button.setOnClickListener(v -> bmi());
         binding.buttonYes.setOnClickListener(v -> startSecondActivity());
         binding.buttonNo.setOnClickListener(v -> showDialog());
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void calculate() {
+    public void bmi() {
         String leftValue = binding.editHeight.getText().toString();
         String rightValue = binding.editWeight.getText().toString();
 
@@ -51,17 +50,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "몸무게를 입력해주세요", Toast.LENGTH_SHORT).show();
             return;
         }
-
-        float left = Float.parseFloat(leftValue);
-        float right = Float.parseFloat(rightValue);
-
-        float result = 0;
-        result = left / right;
-    }
-
-    public void bmi() {
-        String leftValue = binding.editHeight.getText().toString();
-        String rightValue = binding.editWeight.getText().toString();
 
         float left = Float.parseFloat(leftValue);
         float right = Float.parseFloat(rightValue);
@@ -96,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
-
-
+    
 
 }
