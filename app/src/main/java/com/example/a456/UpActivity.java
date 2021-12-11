@@ -22,7 +22,7 @@ public class UpActivity extends AppCompatActivity {
         binding.buttonUp1.setOnClickListener(v-> startWeb1());
         binding.buttonUp2.setOnClickListener(v-> startWeb2());
         binding.buttonUp3.setOnClickListener(v-> startWeb3());
-        
+
         binding.buttonUp1Save.setOnClickListener(v -> {
             float rate = binding.ratingBarUp1.getRating();
             binding.ratingBarUp1.setRating(rate);
