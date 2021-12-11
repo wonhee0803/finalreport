@@ -15,8 +15,8 @@
         android:textColor="#0000CD"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintEnd_toStartOf="@+id/button_up1"
+        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_title" />
 
@@ -28,7 +28,7 @@
         android:text="#5분 #팔뚝살 #다이어트"
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/button_up1"
-        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintHorizontal_bias="0.192"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_title_up1" />
 
@@ -37,47 +37,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        app:style="@style/Widget.AppCompat.RatingBar.Indicator"
-        app:layout_constraintEnd_toStartOf="@+id/button_up2_save"
-        app:layout_constraintHorizontal_bias="0.789"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_up1_save"
         app:layout_constraintTop_toBottomOf="@+id/text_up1" />
 
     <Button
         android:id="@+id/button_up1"
         android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="40dp"
         android:backgroundTint="#6EE0FF"
         android:text="시작"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title_up1" />
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
 
     <TextView
         android:id="@+id/text_title_up2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="15분! 상체비만 다이어트 최고의 운동"
+        android:layout_marginTop="48dp"
+        android:text="15분! 상체비만 최고의 운동"
         android:textColor="#0000CD"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintEnd_toStartOf="@+id/button_up2"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar_up1" />
 
     <Button
         android:id="@+id/button_up2"
         android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="40dp"
         android:backgroundTint="#6EE0FF"
         android:text="시작"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title_up2" />
+        app:layout_constraintTop_toBottomOf="@+id/button_up1_save" />
 
     <TextView
         android:id="@+id/text_up2"
@@ -95,11 +93,8 @@
         android:id="@+id/ratingBar_up2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
-        app:style="@style/Widget.AppCompat.RatingBar.Indicator"
-        app:layout_constraintEnd_toStartOf="@+id/button_up1_save"
-        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintEnd_toStartOf="@+id/button_up2_save"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_up2" />
 
@@ -107,15 +102,12 @@
         android:id="@+id/ratingBar_up3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
-        app:style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_marginEnd="28dp"
         app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintEnd_toStartOf="@+id/button_up3_save"
-        app:layout_constraintHorizontal_bias="0.62"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_up3"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintVertical_bias="0.01" />
 
     <TextView
         android:id="@+id/text_up3"
@@ -140,23 +132,21 @@
         android:textColor="#0000CD"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintEnd_toStartOf="@+id/button_up3"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar_up2" />
 
     <Button
         android:id="@+id/button_up3"
         android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="44dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="40dp"
         android:backgroundTint="#6EE0FF"
         android:text="시작"
-        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_title_up3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/button_up2_save" />
 
     <TextView
         android:id="@+id/text_copyright"
@@ -197,40 +187,40 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_up1_save"
-        android:layout_width="55dp"
+        android:id="@+id/button_up2_save"
+        android:layout_width="70dp"
         android:layout_height="38dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
         android:outlineProvider="background"
         android:text="저장"
         android:textSize="10sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_up2"
-        app:layout_constraintTop_toBottomOf="@+id/text_title_up2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_up2" />
 
     <Button
-        android:id="@+id/button_up2_save"
-        android:layout_width="55dp"
+        android:id="@+id/button_up1_save"
+        android:layout_width="70dp"
         android:layout_height="38dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
         android:outlineProvider="background"
         android:text="저장"
         android:textSize="10sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_up1"
-        app:layout_constraintTop_toBottomOf="@+id/text_title_up1" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_up1" />
 
     <Button
         android:id="@+id/button_up3_save"
-        android:layout_width="55dp"
+        android:layout_width="70dp"
         android:layout_height="38dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
         android:outlineProvider="background"
         android:text="저장"
         android:textSize="10sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_up3"
-        app:layout_constraintTop_toBottomOf="@+id/text_title_up3" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_up3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
