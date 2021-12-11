@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.a456.databinding.ActivityMainBinding;
@@ -22,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         binding.button.setOnClickListener(v -> bmi());
         binding.buttonYes.setOnClickListener(v -> startSecondActivity());
         binding.buttonNo.setOnClickListener(v -> showDialog());
-
     }
 
     private void startSecondActivity() {
@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             message = "고도비만입니다. 다이어트를 위한 전문적인 관리가 시급합니다.";
         }
         binding.textBmi.setText(message);
+        binding.textBmi.setVisibility(View.VISIBLE);
     }
 
     public void showDialog() {
