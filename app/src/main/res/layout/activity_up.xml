@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:style="@style/Widget.AppCompat.RatingBar.Indicator"
+        app:style="@style/Widget.AppCompat.RatingBar.Indicator"
         app:layout_constraintEnd_toStartOf="@+id/button_up2_save"
         app:layout_constraintHorizontal_bias="0.789"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,11 +93,11 @@
 
     <RatingBar
         android:id="@+id/ratingBar_up2"
-        android:style="@style/Widget.AppCompat.RatingBar.Indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
+        app:style="@style/Widget.AppCompat.RatingBar.Indicator"
         app:layout_constraintEnd_toStartOf="@+id/button_up1_save"
         app:layout_constraintHorizontal_bias="0.731"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,11 +105,11 @@
 
     <RatingBar
         android:id="@+id/ratingBar_up3"
-        style="@style/Widget.AppCompat.RatingBar.Indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
+        app:style="@style/Widget.AppCompat.RatingBar.Indicator"
         app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintEnd_toStartOf="@+id/button_up3_save"
         app:layout_constraintHorizontal_bias="0.62"
