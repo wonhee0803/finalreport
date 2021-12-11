@@ -60,15 +60,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void bmi() {
-        float bmiValue = 20.4f;
+        float bmiValue = 00.0f;
 
         String message = "";
-        if (bmiValue < 10) {
-            message = "저체중";
-        } else if (bmiValue < 20) {
-            message = "딱좋아";
+        if (bmiValue < 18.5) {
+            message = "저체중입니다. 근육 키우는 게 시급합니다.";
+        } else if (bmiValue < 22.9) {
+            message = "정상 체중입니다. 유지를 위해 꾸준한 운동관리가 필요합니다.";
+        } else if (bmiValue < 24.9) {
+            message = "과체중입니다. 운동과 식당관리가 필요합니다.";
+        } else if (bmiValue < 29.9) {
+            message = "위험체중입니다. 운동과 식당관리가 시급합니다.";
+        } else if (bmiValue < 34.9) {
+            message = "비만입니다. 꾸준한 운동과 식당관리가 시급합니다.";
         } else {
-            message = "다이어트가 시급합니다";
+            message = "고도비만입니다. 다이어트를 위한 전문적인 관리가 시급합니다.";
         }
         binding.textBmi.setText(message);
     }
