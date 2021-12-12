@@ -23,6 +23,8 @@ public class FoodActivity extends AppCompatActivity {
         binding.button2.setOnClickListener(v-> startWeb2());
         binding.button3.setOnClickListener(v-> startWeb3());
         binding.button4.setOnClickListener(v-> startWeb4());
+        binding.button5.setOnClickListener(v-> startWeb5());
+        binding.button6.setOnClickListener(v-> startWeb6());
     }
 
     public void startWeb1() {
@@ -48,6 +50,20 @@ public class FoodActivity extends AppCompatActivity {
 
     public void startWeb4() {
         String url = "https://terms.naver.com/entry.naver?docId=74335&cid=43667&categoryId=43667";
+        Uri uri = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
+
+    public void startWeb5() {
+        String url = "http://www.dietlog.kr/s/%EB%A0%88%EB%AA%AC%EB%94%94%ED%86%A1%EC%8A%A4";
+        Uri uri = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
+
+    public void startWeb6() {
+        String url = "https://post.naver.com/viewer/postView.naver?volumeNo=32639384&memberNo=44839610&vType=VERTICAL";
         Uri uri = Uri.parse(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
