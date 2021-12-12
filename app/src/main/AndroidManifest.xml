@@ -51,6 +51,18 @@
             android:name=".AllActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".MainFitness"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".DetailFitness"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ReviewFitness"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

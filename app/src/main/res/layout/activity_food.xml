@@ -104,8 +104,10 @@
         android:text="알아보기"
         android:textColor="#000000"
         android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintVertical_bias="0.076" />
 
     <Button
         android:id="@+id/button5"
@@ -314,8 +316,10 @@
         android:layout_marginTop="10dp"
         android:text="#일주일 다이어트 #모델 다이어트"
         android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -333,8 +337,10 @@
         android:layout_height="80dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_copyright"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.112"
         app:srcCompat="@drawable/gm" />
 
 
