@@ -30,7 +30,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void startGymActivity() {
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, MainFitness.class);
 
         startActivity(intent);
     }
