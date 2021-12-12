@@ -1,6 +1,10 @@
 package com.example.a456;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Base64;
+
 import java.io.BufferedReader;
 import java.io.FileOutputStream;
 import java.io.FileInputStream;
@@ -11,12 +15,9 @@ import java.nio.charset.StandardCharsets;
 
 public class FileUtils {
     public static String readFile(Context context, String filename) throws FileNotFoundException {
-        return FileUtils.readStream(context.openFileInput(filename));
-    }
+        FileInputStream fis = context.openFileInput(filename);
 
-    public static String readStream(FileInputStream fis) {
-        InputStreamReader inputStreamReader =
-                new InputStreamReader(fis, StandardCharsets.UTF_8);
+        InputStreamReader inputStreamReader = new InputStreamReader(fis, StandardCharsets.UTF_8);
 
         StringBuilder stringBuilder = new StringBuilder();
         try (BufferedReader reader = new BufferedReader(inputStreamReader)) {
@@ -26,6 +27,7 @@ public class FileUtils {
                 line = reader.readLine();
             }
         } catch (IOException e) {
+
         }
         return stringBuilder.toString().trim();
     }
@@ -36,5 +38,11 @@ public class FileUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static Bitmap getBitmapFromString(String stringPicture) {
+        byte[] decodedString = Base64.decode(stringPicture, Base64.DEFAULT);
+        Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
+        return decodedByte;
     }
 }
