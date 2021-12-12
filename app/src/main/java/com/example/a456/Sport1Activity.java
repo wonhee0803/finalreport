@@ -19,7 +19,7 @@ public class Sport1Activity extends AppCompatActivity {
 
         binding.buttonBack.setOnClickListener(v -> finish());
         binding.buttonUp.setOnClickListener(v -> startUpActivity());
-        binding.buttonBack.setOnClickListener(v -> startBackActivity());
+        binding.buttonDown.setOnClickListener(v -> startBackActivity());
         binding.buttonAll.setOnClickListener(v -> startAllActivity());
     }
 
