@@ -63,6 +63,14 @@
             android:name=".ReviewFitness"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".ReviewActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ContentsActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
